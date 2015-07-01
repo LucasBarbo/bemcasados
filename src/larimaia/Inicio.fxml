@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="186.0" prefWidth="396.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="larimaia.InicioController">
+   <children>
+      <Button fx:id="btnPedido" layoutX="123.0" layoutY="81.0" mnemonicParsing="false" onAction="#btnPedido" text="Pedido" />
+      <Button fx:id="btnRelatorio" layoutX="188.0" layoutY="81.0" mnemonicParsing="false" onAction="#btnRelatorio" text="Relatorios" />
+      <Button fx:id="btnCadastro" layoutX="46.0" layoutY="81.0" mnemonicParsing="false" onAction="#btnCadastro"  text="Cadastros" />
+   </children>
+</AnchorPane>

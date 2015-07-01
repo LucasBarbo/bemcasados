@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="larimaia.TelaProdutoController">
+    <children>
+      <TableView fx:id="tabela" layoutX="14.0" layoutY="164.0" prefHeight="167.0" prefWidth="259.0">
+        <columns>
+          <TableColumn fx:id="colunaId" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="colunaDescricao" prefWidth="98.0" text="Descricao" />
+            <TableColumn fx:id="colunaValor" prefWidth="81.0" text="Valor" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnBuscar" layoutX="34.0" layoutY="100.0" mnemonicParsing="false" onAction="#busca" text="Buscar" />
+      <Button fx:id="btnSalvar" layoutX="346.0" layoutY="113.0" mnemonicParsing="false" onAction="#salvar" text="Salvar" />
+      <TextField fx:id="idProdutoT" layoutX="33.0" layoutY="65.0" prefHeight="25.0" prefWidth="52.0" />
+      <Label layoutX="36.0" layoutY="42.0" text="Id: " />
+      <Label layoutX="272.0" layoutY="42.0" text="Descricao: " />
+      <Label layoutX="272.0" layoutY="69.0" text="Valor" />
+      <TextField fx:id="descricaoT" layoutX="346.0" layoutY="38.0" />
+      <TextField fx:id="valorT" layoutX="346.0" layoutY="65.0" />
+      <Button fx:id="btnAlterar" layoutX="431.0" layoutY="113.0" mnemonicParsing="false" onAction="#alterar" text="Alterar" />
+      <Button fx:id="btnExcluir" layoutX="127.0" layoutY="100.0" mnemonicParsing="false" onAction="#excluir" text="Excluir" />
+      <Label layoutX="127.0" layoutY="42.0" text="Id" />
+      <TextField fx:id="idExcluir" layoutX="127.0" layoutY="65.0" prefHeight="25.0" prefWidth="52.0" />
+   </children>
+</AnchorPane>

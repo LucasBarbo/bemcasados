@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="larimaia.AlterarClienteController">
+   <children>
+      <TableView fx:id="tabela" layoutX="14.0" layoutY="164.0" prefHeight="167.0" prefWidth="398.0">
+        <columns>
+          <TableColumn fx:id="colunaId" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="colunaNome" prefWidth="98.0" text="Nome" />
+            <TableColumn fx:id="colunaTelefone" prefWidth="81.0" text="Telefone" />
+            <TableColumn fx:id="colunaEmail" prefWidth="65.0" text="Email" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnBuscar" layoutX="34.0" layoutY="100.0" mnemonicParsing="false" onAction="#busca" text="Buscar" />
+      <Button fx:id="btnSalvar" layoutX="435.0" layoutY="125.0" mnemonicParsing="false" onAction="#salvar" text="Salvar" />
+      <TextField fx:id="idClienteT" layoutX="33.0" layoutY="65.0" prefHeight="25.0" prefWidth="52.0" />
+      <Label layoutX="36.0" layoutY="42.0" text="Id: " />
+      <Label layoutX="272.0" layoutY="42.0" text="Nome: " />
+      <Label layoutX="272.0" layoutY="69.0" text="Telefone: " />
+      <Label layoutX="272.0" layoutY="95.0" text="Email: " />
+      <TextField fx:id="nomeT" layoutX="334.0" layoutY="38.0" />
+      <TextField fx:id="telefoneT" layoutX="334.0" layoutY="65.0" />
+      <TextField fx:id="emailT" layoutX="334.0" layoutY="91.0" />
+      <Button fx:id="btnAlterar" onAction="#alterar"  layoutX="506.0" layoutY="125.0" mnemonicParsing="false" text="Alterar" />
+      <Button fx:id="btnExcluir" onAction="#excluir"  layoutX="127.0" layoutY="100.0" mnemonicParsing="false" text="Excluir" />
+      <Label layoutX="127.0" layoutY="42.0" text="Id" />
+      <TextField fx:id="idExcluir"  layoutX="127.0" layoutY="65.0" prefHeight="25.0" prefWidth="52.0" />
+   </children>
+</AnchorPane>

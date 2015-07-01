@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="366.0" prefWidth="426.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="larimaia.TelaCadUsuarioController">
+   <children>
+      <Button fx:id="btnBuscar" onAction="#busca"  layoutX="28.0" layoutY="91.0" mnemonicParsing="false" text="Buscar" />
+      <Button fx:id="btnExcluir" onAction="#excluir"  layoutX="94.0"  layoutY="91.0" mnemonicParsing="false" text="Excluir" />
+      <Button fx:id="btnSalvar" onAction="#salvar"  layoutX="196.0" layoutY="116.0" mnemonicParsing="false" text="Salvar" />
+      <TableView fx:id="tabela" layoutX="19.0" layoutY="141.0" prefHeight="169.0" prefWidth="151.0">
+        <columns>
+          <TableColumn fx:id="colunaId" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="colunaNome" prefWidth="75.0" text="Nome" />
+        </columns>
+      </TableView>
+      <PasswordField fx:id="senhaT" layoutX="196.0" layoutY="85.0" />
+      <TextField fx:id="loguinT" layoutX="196.0" layoutY="53.0" />
+      <TextField fx:id="idBuscaT" layoutX="28.0" layoutY="53.0" prefHeight="25.0" prefWidth="46.0" />
+      <TextField fx:id="idExcluir" layoutX="94.0" layoutY="53.0" prefHeight="25.0" prefWidth="52.0" />
+      <Button fx:id="btnAlterar" onAction="#alterar"  layoutX="297.0" layoutY="116.0" mnemonicParsing="false" text="Alterar" />
+      <Label layoutX="128.0" layoutY="14.0" text="Cadastro Usuario">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

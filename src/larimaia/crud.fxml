@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="274.0" prefWidth="372.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="larimaia.CrudController">
+   <children>
+      <Button fx:id="alterarCliente" layoutX="15.0" layoutY="112.0" mnemonicParsing="false" onAction="#cliente" prefHeight="25.0" prefWidth="79.0" text="Clientes" />
+      <Button fx:id="btnProdutos" layoutX="16.0" layoutY="157.0" mnemonicParsing="false" onAction="#produto" prefHeight="25.0" prefWidth="79.0" text="Produtos" />
+      <Button fx:id="btnTipoEvento" layoutX="16.0" layoutY="203.0" mnemonicParsing="false" onAction="#tipo" text="Tipo Evento" />
+      <Label layoutX="128.0" layoutY="14.0" text="Cadastros">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnUsuario" onAction="#usuario"  layoutX="16.0" layoutY="69.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Usuario" />
+   </children>
+</AnchorPane>

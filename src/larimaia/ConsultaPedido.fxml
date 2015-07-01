@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="AnchorPane" prefHeight="607.0" prefWidth="827.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="larimaia.ConsultaPedidoController">
+   <children>
+      <Button fx:id="btnBuscarCliente" layoutX="14.0" layoutY="78.0" mnemonicParsing="false" onAction="#btnCliente" text="Buscar" />
+      <ComboBox fx:id="comboClientes" layoutX="14.0" layoutY="49.0" prefHeight="25.0" prefWidth="106.0" />
+      <Label layoutX="14.0" layoutY="32.0" prefHeight="17.0" prefWidth="52.0" text="Cliente" />
+      <Label layoutX="268.0" layoutY="1.0" prefHeight="25.0" prefWidth="119.0" text="Relatorios">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tabela" layoutX="165.0" layoutY="288.0" prefHeight="305.0" prefWidth="561.0">
+        <columns>
+            <TableColumn fx:id="colunaIdePedido" prefWidth="75.0" text="idPedido" />
+            <TableColumn fx:id="colunaNomeCliente" prefWidth="75.0" text="Cliente" />
+            <TableColumn fx:id="colunaDataContrato" prefWidth="96.0" text="Data Contrato" />
+            <TableColumn fx:id="colunaTipoEvento" prefWidth="75.0" text="Tipo Evento" />
+            <TableColumn fx:id="colunaDataEvento" prefWidth="75.0" text="Data Evento" />
+            <TableColumn fx:id="colunaQuantidade" prefWidth="75.0" text="Quantidade" />
+            <TableColumn fx:id="colunaValor" prefWidth="75.0" text="Valor" />
+        </columns>
+      </TableView>
+      <DatePicker fx:id="dataInicioContratos" layoutX="225.0" layoutY="70.0" prefHeight="6.0" prefWidth="85.0" />
+      <DatePicker fx:id="dataFimContratos" layoutX="316.0" layoutY="70.0" prefHeight="17.0" prefWidth="85.0" />
+      <Label layoutX="225.0" layoutY="32.0" prefHeight="17.0" prefWidth="85.0" text="Por contratos" />
+      <Label layoutX="232.0" layoutY="53.0" prefHeight="17.0" prefWidth="45.0" text="Inicio" />
+      <Label layoutX="323.0" layoutY="53.0" prefHeight="17.0" prefWidth="34.0" text="Fim" />
+      <Label layoutX="527.0" layoutY="32.0" text="Por data de Entrega" />
+      <DatePicker fx:id="dataInicioPedidos" layoutX="500.0" layoutY="70.0" prefHeight="6.0" prefWidth="85.0" />
+      <DatePicker fx:id="dataFimPedidos" layoutX="591.0" layoutY="70.0" prefHeight="6.0" prefWidth="85.0" />
+      <Label layoutX="506.0" layoutY="53.0" text="Inicio" />
+      <Label layoutX="592.0" layoutY="51.0" text="Fim" />
+      <Button fx:id="btnContratos" layoutX="349.0" layoutY="103.0" mnemonicParsing="false" onAction="#btnContratos" text="Buscar" />
+      <Button fx:id="btnEntrega" onAction="#btnEntrega"  layoutX="634.0" layoutY="103.0" mnemonicParsing="false" text="Buscar" />
+   </children>
+</AnchorPane>
